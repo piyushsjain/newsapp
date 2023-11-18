@@ -23,7 +23,7 @@ export default class Navbar extends Component {
 
   render(){
     return (
-      <div className="w-full md:flex justify-between bg-purple-600 text-white py-2 px-3 sm:px-9">
+      <div className="w-full md:flex justify-between bg-purple-600 text-white py-2 px-3 sm:px-9 fixed top-0">
         <div className="flex justify-between">
           <Link to="/">
             <div className="font-bold text-2xl cursor-pointer">NewsApp</div>
