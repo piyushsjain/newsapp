@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-export class NewsItem extends Component {
-  render() {
-    let { title, description, imageUrl, url, author, date, source } = this.props;
+const NewsItem = (props) => {
+    let { title, description, imageUrl, url, author, date, source } = props;
     return (
       <div className="mx-[15%] flex flex-wrap justify-center border-2 border-b-slate-500 mt-8">
         <div className="xl:w-60 xl:mr-[45px] ">
@@ -26,7 +25,7 @@ export class NewsItem extends Component {
         </div>
       </div>
     );
-  }
+  
 }
 
 export default NewsItem;
