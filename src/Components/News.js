@@ -73,7 +73,7 @@ const News = (props) => {
           {articles.map((article) => {
               return (
                 <NewsItem
-                  // key={article.title}
+                  key={article.title}
                   title={article.title ? article.title : "unknown"}
                   description={article.description}
                   imageUrl={article.urlToImage ? article.urlToImage : newsImg}

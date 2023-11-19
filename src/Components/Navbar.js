@@ -5,7 +5,6 @@ import hamburgerIcon from './hamburger.jpg'
 const Navbar = () => {
 
   const menu = (e) => {
-    console.log("hello");
     if (document.getElementById("menuList").classList.contains('hidden')) {
       document.getElementById("menuList").classList.remove("hidden");
     } else {
