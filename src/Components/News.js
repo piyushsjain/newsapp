@@ -14,7 +14,7 @@ const News = (props) => {
   const [page, setPage] = useState(1)
   const [loading, setLoading] = useState(false)
   const [totalResults, setTotalResults] = useState(0)  
-  document.title = `${capitalizeFirstLetter(props.category)} | NewsMonkey`;
+  document.title = `${capitalizeFirstLetter(props.category)} | NewsApp`;
 
   const updateNews = async(pageno) => {
     props.setProgress(10);
